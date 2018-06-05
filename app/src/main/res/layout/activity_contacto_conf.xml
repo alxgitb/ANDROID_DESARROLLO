@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactoConf">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvConf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONFIRMAR DATOS"
+            android:textStyle="bold|italic"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <!--***************-->
+
+    <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+
+              <TextView
+                  android:id="@+id/tvConfN"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/conf_nombre"
+                  android:textSize="22sp"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginTop="20dp"
+                  android:layout_below="@id/tvConf"/>
+
+              <TextView
+                  android:id="@+id/tvConfNom"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="22sp"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginTop="20dp"/>
+            </LinearLayout>
+                            <!--***************-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                android:id="@+id/tvConfC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/conf_calendario"
+                android:textSize="22sp"
+                android:layout_below="@id/tvConfN"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"/>
+
+                <TextView
+                android:id="@+id/tvConfCal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:layout_below="@id/tvConfN"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"/>
+            </LinearLayout>
+                                <!--***************-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvConfT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/conf_telefono"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/tvConfC"/>
+
+                <TextView
+                    android:id="@+id/tvConfTel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/tvConfC"/>
+            </LinearLayout>
+                                    <!--***************-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvConfE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/conf_email"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/tvConfT"/>
+
+                <TextView
+                    android:id="@+id/tvConfEm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/tvConfT"/>
+            </LinearLayout>
+                            <!--***************-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvConfD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/conf_descripcion"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/tvConfE"/>
+                <TextView
+                    android:id="@+id/tvConfDe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/tvConfE"/>
+            </LinearLayout>
+                            <!--***************-->
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/btnReg"
+        android:text="@string/btn_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_below="@id/tvConfD"/>
+
+</LinearLayout>
+
+
+
+</LinearLayout >
+</ScrollView>
